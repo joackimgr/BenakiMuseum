@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>Μουσείο Μπενάκη</title>
+</head>
+<body>
+    <!--Alert-->
+    <script>
+		alert("Ο συγκεκριμένος ιστότοπος πραγματοποιήθηκε στα πλαίσια εξέτασης του μαθήματος Τεχνολογίες Διαδικτύου του Tμήματος Πολιτισμικής Τεχνολογίας & Επικοινωνίας. Το περιεχόμενο της ιστοσελίδας έχει άδεια περιεχομένου CC0 (Creative Commons zero) και δεν αποτελεί προϊόν εμπορικής χρήσης.");
+	</script>
+    <!--Navigation-->
+    <nav class="w3-bar w3-black">
+        <a href="index.html" class="w3-button w3-bar-item">Home</a>
+        <a href="html/about.html" class="w3-button w3-bar-item">About</a>
+        <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+        <a href="html/fin.html" class="w3-button w3-bar-item">Συλλογή Ευστάθιου Ι. Φινόπουλου</a>
+    </nav>
+    <!--SlideShow-->
+    <section>
+        <img class="mySlides" src="images/1.jpg" style="width: 100%; height: 850px;" >
+        <img class="mySlides" src="images/2.jpg" style="width: 100%; height: 850px;" >
+        <img class="mySlides" src="images/3.jpg" style="width: 100%; height: 850px;" >
+    </section>
+    <!--Benaki-->
+    <section id="about" class="w3-container w3-center w3-content" style="max-width: 600px;">
+        <h2 class="w3-wide">BENAKI MUSEUM</h2>
+        <p class="w3-justify">Το Μουσείο Μπενάκη ιδρύθηκε το 1930 στην Αθήνα με δωρεά του Αντώνη Μπενάκη προς το Ελληνικό Δημόσιο στη μνήμη του πατέρα του, Εμμανουήλ Μπενάκη, οπότε και στεγάστηκε στη νεοκλασική αρχοντική οικία της οικογένειας Μπενάκη. Θεωρείται ένας από τους κορυφαίους πολιτιστικούς οργανισμούς στην Ελλάδα με πάνω από 100.000 εκθέματα ελληνικής ιστορίας και πολιτισμού, ενώ από το 2000 οι συλλογές του διαχωρίστηκαν θεματικά με την χρήση περιφερειακών μουσείων.Είναι Ίδρυμα Ιδιωτικού Δικαίου και θεωρείται το παλαιότερος οργανισμός μουσείων στον ελληνικό χώρο.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oDoZZfgEaKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h5>Credits for the info go to: <a href="https://el.wikipedia.org/wiki/%CE%9C%CE%BF%CF%85%CF%83%CE%B5%CE%AF%CE%BF_%CE%9C%CF%80%CE%B5%CE%BD%CE%AC%CE%BA%CE%B7" target="_blank">Wikipedia.org</a> and <a href="https://www.benaki.org/index.php?option=com_landings&view=finopoulos&Itemid=170&lang=el" target="_blank">benaki.org</a></h5>
+        <h5>Credits for the photos go to: <a href="https://commons.wikimedia.org/wiki/File:%CE%9C%CE%BF%CF%85%CF%83%CE%B5%CE%AF%CE%BF_%CE%9C%CF%80%CE%B5%CE%BD%CE%AC%CE%BA%CE%B7_6690.jpg" target="_blank">Wikimedia.org</a>, <a href="https://www.flickr.com/photos/telemax/4448959628" target="_blank">Tilemahos Efthimiadis</a> and <a href="https://de.wikipedia.org/wiki/Datei:Mouseio_Benaki.jpg" target="_blank">Wikipedia.org</a></h5>
+    </section>
+    <!--Footer-->
+    <footer id="contact" class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <a href="https://www.facebook.com/TheBenakiMuseum/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+        <a href="https://twitter.com/TheBenakiMuseum" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.flickr.com/groups/1096897@N24/" target="_blank"><i class="fa fa-flickr"></i></a>
+        <a href="https://gr.pinterest.com/thebenakimuseum/" target="_blank"><i class="fa fa-pinterest-p"></i></a>
+        <p class="w3-medium">Powered by:<a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a><br>
+        Edited by:<a href="mailto:ct22120@aegean.gr">Ioakeim Pantelakis</a><br>
+        <address class="w3-medium">
+        Copyright &copy 2023 All Rights Reserved
+        </address>
+        </p>
+    </footer>
+        <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+        </script>
+</body>
+</html>
